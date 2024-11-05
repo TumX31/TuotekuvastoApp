@@ -1,0 +1,52 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/* Стили для кнопок и форм */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+/* Стили для карточек продукта */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Отступ между карточками */
+}
+
+.product-card {
+    border: 1px solid #ccc; /* Граница карточки */
+    border-radius: 5px; /* Закругление углов */
+    padding: 20px; /* Отступ внутри карточки */
+    width: 200px; /* Ширина карточки */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+    .product-card img {
+        max-width: 100%; /* Максимальная ширина изображения */
+        height: auto; /* Автоматическая высота для пропорций */
+    }
+
+    .product-card h2 {
+        font-size: 1.2rem; /* Размер шрифта заголовка */
+    }
+
+    .product-card p {
+        margin: 0.5rem 0; /* Отступы для параграфов */
+    }
